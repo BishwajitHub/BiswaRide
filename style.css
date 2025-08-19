@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+}
+.navbar {
+    height: 80px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-family: cursive;
+}
+
+.br_logo img {
+    padding: 20%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-attachment: fixed;
+
+}
+
+.section {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; 
+    flex: 1; 
+    margin-left: 20px; 
+}
+
+.section li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.section li a:hover {
+    color: rgb(89, 0, 255);
+}
+
+#hero{
+    font-size: medium;
+    color:rgb(255, 0, 0);
+
+}
+.boy{
+
+     height: 50vh;
+    
+    background-image: url("background.png"); /* Change to your image file name */
+    background-size: cover;       /* Fill the entire screen */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat; /* Don't tile the image */
+}
