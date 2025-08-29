@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: aqua;
-}
+    
 .navbar {
     height: 80px;
     background-color: #0f1111;
@@ -12,6 +12,8 @@
     align-items: center;
     padding: 0;
     font-family: cursive;
+    ov
+    
 }
 
 .br_logo img {
@@ -20,6 +22,22 @@
     width: 100px;
     border-radius: 100px;
     background-attachment: fixed;
+   margin-top: 40%;
+    background-color: rgb(177, 55, 24);
+    overflow: hidden;
+
+    .section border{
+        grid-template-columns: max-content;
+        gap: 5px;
+    }
+
+    #logo-container{
+    height: 100px;
+    width: 250px;
+    margin: auto;
+    border-radius: 25%;
+}
+    
 
 }
 
@@ -32,7 +50,7 @@
 }
 
 .section li a {
-    color: white;
+    color: rgb(17, 16, 16);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -47,12 +65,210 @@
     color:rgb(255, 0, 0);
 
 }
-.boy{
 
-     height: 50vh;
-    
-    background-image: url("background.png"); /* Change to your image file name */
-    background-size: cover;       /* Fill the entire screen */
-    background-position: center;  /* Center the image */
-    background-repeat: no-repeat; /* Don't tile the image */
+
+/* background */
+
+.background {
+    margin: 0px;
+     height: vh;
+     width: auto;
+      brightness(0%)
+
+  }
+  .text{
+      position: absolute;
+      top: 50%;      /* vertical center */
+      left: 5%;      /* left side */
+      transform: translateY(-100%);
+      color: rgb(247, 240, 240);  
+      font-size: 36px;
+      font-weight: bold;
+      background: rgba(126, 91, 91, 0); /* optional */
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: cursive;
+  }
+  
+
+  /* earn with BiswaRide family */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 20px;
 }
+
+.image-grid img {
+  width: 100%;      /* make them stretch to column */
+  height: 250px;    /* fixed height for all */
+  object-fit: cover; /* crop/fit nicely */
+  border-radius: 10px;
+}
+
+
+.H{
+    margin: 0px;
+    color: blue;
+}
+
+
+/* message button */
+#button {
+    float: right;
+    margin: 10px; /* optional: adds some spacing */
+   color: rgb(255, 94, 0); 
+   height: 40px;
+   border-radius: 100px;
+   text:bold;
+   size: fixed;
+   background-color: red;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   /* border-radius: 8px; */
+
+   .fa-solid.fa-forward{
+  color: #fff;                 /* <- use white so it’s visible */
+  background-color: red;
+} 
+
+
+}
+.button-container{
+    color: azure;
+}
+
+
+#button:hover {
+    background: navy !important;
+}
+
+
+/* Delivery by bicycle */
+#bisu{
+    float: right;
+    margin: 10px; /* optional: adds some spacing */
+   color: rgb(255, 94, 0); 
+   height: 40px;
+   border-radius: 100px;
+   size: fixed;
+   background-color: red;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   
+
+
+.fa-solid.fa-forward{
+  color: #fff;                 /* <- use white so it’s visible */
+  background-color: red;
+} 
+}
+
+#bisu:hover {
+    background: navy !important;
+}
+
+
+.headlines{
+    text-align: center;
+}
+
+.headlines i{
+    color: red;
+}
+.earn{
+    text-align: center;
+    color: black;   
+}
+
+
+/* news */
+.link{
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  gap: 40px; /* gap between links */
+  padding: 0;
+  list-style: none;
+}
+
+
+/* Footer section */
+#footer{
+    background-color: #292929;
+    padding: 20px;
+    position: relative;
+
+}
+
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+
+#footer h5 a{
+    color: black;
+    text-decoration:none
+}
+
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color:#ff0000;
+    font-size: 1.2rem;
+}
+
+/* logo section */
+/* Container for logo */
+#logo-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8f0;
+}
+
+/* Logo image */
+#logo-container img {
+    width: 200px;              /* Adjust size as needed */
+    height: auto;
+    border-radius: 20px;       /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+#logo-container img:hover {
+    transform: scale(1.05);    /* Slight zoom on hover */
+}
+
+/* Owner section */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0e6d2;
+    position: relative;
+}
+
+#footer img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+#footer p {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

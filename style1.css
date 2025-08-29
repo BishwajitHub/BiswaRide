@@ -1,0 +1,94 @@
+.boy {
+    height: 10vh; /* full screen height */
+    width: auto;
+    background-image: url("bisugirl.png"); /* your image */
+    background-size: contain;   /* show full image */
+    background-position: center; /* center it */
+    background-repeat: no-repeat; /* no tiling */
+    background-color:rgba(19, 18, 1, 0.705);
+    
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;      /* make them stretch to column */
+  height: 100%;    /* fixed height for all */
+  object-fit: cover; /* crop/fit nicely */
+  border-radius: 10px;
+}
+
+
+/* Footer section */
+#footer{
+    background-color: #292929;
+    padding: 20px;
+    position: relative;
+
+}
+
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+
+#footer h5 a{
+    color: black;
+    text-decoration:none
+}
+
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color:#ff0000;
+    font-size: 1.2rem;
+}
+
+/* logo section */
+/* Container for logo */
+#logo-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8f0;
+}
+
+/* Logo image */
+#logo-container img {
+    width: 200px;              /* Adjust size as needed */
+    height: auto;
+    border-radius: 20px;       /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+#logo-container img:hover {
+    transform: scale(1.05);    /* Slight zoom on hover */
+}
+
+/* Owner section */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0e6d2;
+    position: relative;
+}
+
+#footer img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+#footer p {
+    font-family: cursive;
+    font-weight: bold;
+}
+

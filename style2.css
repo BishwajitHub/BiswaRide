@@ -1,0 +1,379 @@
+*{
+    background-color:aqua
+}
+
+
+#biswa{
+    text-align: center;
+    color: rgb(255, 196, 0);
+    font-weight: 900;
+    font-style: oblique;
+}
+
+#biswa2{
+    text-align: center;
+    color: brown;
+    
+}
+#s{
+    font-family: cursive;
+}
+
+/* backgrounds */
+.crop-box {
+  width: 100%;
+  height: 600px;       /* final visible height */
+  overflow: hidden;    /* hides cropped area */
+  position: relative;
+}
+
+.crop-box img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -400px;   /* shift image UP = crop top part */
+}
+
+
+/* form */
+.contact_col form{
+    display: flex;
+    flex-direction: column;
+    background-color: moccasin;
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+}
+
+.contact_col form h2{
+    text-align: center;
+    font-family: cursive;
+
+}
+.contact_col form input{
+    width: 100%;
+    height: 17pt;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.contact_col form button{
+    margin: auto;
+    padding: 10px;
+    color: #ffff;
+    background-color: grey;
+    /* border:1px orange; */
+    cursor: pointer;
+}
+
+/* for contact to fotter */
+/* c* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #f8f3f3;
+  color: #222;
+} */
+
+/* ==== Background Section ==== */
+#information {
+  position: relative;
+  height: 50vh; 
+  background: url("shivaji.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#information::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(32, 32, 32, 0.45); 
+}
+
+/* ==== Contact Section ==== */
+#contact {
+  padding: 80px 20px;
+  background: #f8f3f3;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ==== Heading Modern Style ==== */
+.contact-container h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-container h2:hover {
+  color: crimson;
+  transform: scale(1.05);
+}
+
+/* underline effect center se expand */
+.contact-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: crimson;
+  transition: width 0.5s ease;
+}
+
+.contact-container h2:hover::after {
+  width: 100%;
+}
+
+.contact-container p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  font-weight: 545;
+  color: #171717;
+}
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
+  align-items: flex-start; 
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.home i {
+  font-size: 1.9rem;
+  color: crimson; 
+  padding: 12px;
+  flex-shrink: 0; 
+}
+
+.home h3 {
+    margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #130f45;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .contact-info {
+    align-items: center;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* ==== Contact Form ==== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 3.5px solid #390986;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: crimson;
+  box-shadow: 0 0 8px rgba(220, 20, 60, 0.3);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+
+/* optionanl form  */
+ .form-box {
+      background: #0e86aa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(32, 6, 175, 0.15);
+      max-width: 350px;
+      border: 3.5px solid #390986;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 3.5px solid #571ce2;
+      font-size: 16px;
+    }
+
+/* Button */
+.contact-form button {
+  background: crimson;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0015ff;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(220,20,60,0.3);
+}
+
+
+.map-container {
+  margin: 60px auto 0;   
+  width: 80%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {   
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+footer {
+
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  
+ 
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-icons a {
+  font-size: 24px;
+  color: #f92e2e;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #5400dc;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .contact-info {
+    gap: 20px;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home h3 {
+    text-align: center;
+  }
+}
+
+/* soft -skill */
+.soft-skill{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 50px;
+    max-width: 90%;
+    margin: auto;
+}
+.skill-box{
+    background: rgb(62, 112, 108);
+    /* padding: 25px 15px; */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.05); */
+    /* transition: all 0.3s ease; */
+    cursor: pointer;
+}
+.skill-box i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+    transition: transform 0.3s ease;
+}
+.skill-box h3{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Modern hover effect for soft skills */
+.skill-box:hover {
+    transform: translateY(-8px);
+    background: wheat;
+    color: rgb(170, 24, 24);
+}
+.skill-box:hover i {
+    color: yellowgreen;
+}
+
+.biswa4{
+    text-align: center;
+}
+
+#Biswa{
+    text-align: center;
+}
