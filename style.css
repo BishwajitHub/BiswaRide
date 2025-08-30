@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: aqua;
-    
+}
 .navbar {
     height: 80px;
     background-color: #0f1111;
@@ -12,7 +12,6 @@
     align-items: center;
     padding: 0;
     font-family: cursive;
-    ov
     
 }
 
@@ -25,6 +24,7 @@
    margin-top: 40%;
     background-color: rgb(177, 55, 24);
     overflow: hidden;
+}
 
     .section border{
         grid-template-columns: max-content;
@@ -39,7 +39,6 @@
 }
     
 
-}
 
 .section {
     list-style: none;
@@ -62,7 +61,7 @@
 
 #hero{
     font-size: medium;
-    color:rgb(255, 0, 0);
+    color:rgb(73, 12, 214);
 
 }
 
@@ -73,8 +72,7 @@
     margin: 0px;
      height: vh;
      width: auto;
-      brightness(0%)
-
+     filter: brightness(130%);
   }
   .text{
       position: absolute;
@@ -107,10 +105,6 @@
 }
 
 
-.H{
-    margin: 0px;
-    color: blue;
-}
 
 
 /* message button */
@@ -264,6 +258,41 @@
 #footer p {
     font-family: cursive;
     font-weight: bold;
+}
+
+/* see more button */
+.box1{
+    display: inline;
+    border-radius: 15%;
+    background-color: #ff640b;
+    border: red;
+    
+}
+.box1:hover{
+    color: rgb(177, 248, 11);
+    background-color: red;
+}
+
+
+#H{
+    color: red;
+    text-align: center;
+    font-size:x-large;
+    font-style: italic;
+}
+
+#B{
+    text-align: center;
+    text-decoration:dotted;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* map or location */
+.map-container iframe {
+  width: 100%;   /* full width of parent */
+  height: 400px; /* set your height */
+  border: 0;
 }
 
 
