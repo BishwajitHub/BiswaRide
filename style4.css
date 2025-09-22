@@ -1,0 +1,77 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: aqua;
+  color: brown;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  height: 80px;
+  background-color: #0bf8f857;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav right */
+  padding: 0 20px;
+  font-family: cursive;
+}
+
+.br_logo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(177, 55, 24);
+  object-fit: cover;
+  te
+}
+
+/* Nav menu */
+.section {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: auto; /* pushes nav items to the right */
+}
+
+section li a {
+  color: rgb(17, 16, 16);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section li a:hover {
+  color: rgb(89, 0, 255);
+}
+
+
+.service {
+    height: 60vh;
+    width: 100%;
+    background-image: url("contact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+
+    margin-top: 30px;   /* add space from top */
+}
+
+
+
+/* Owner footer section */
+#footer img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
